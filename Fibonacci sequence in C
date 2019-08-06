@@ -5,9 +5,10 @@ int main()
 {
     int a = 0;
     int b = 1;
-    int i;
+    int i = 0;
     int number_of_terms;
     int next_term;
+
 
     puts("Enter the number of terms: ");
     scanf("%d", &number_of_terms);
@@ -19,8 +20,10 @@ int main()
 
     if (number_of_terms > 1)
     {
+        printf("%d \n", 0);
+        printf("%d \n", 1);
 
-        for (i=0; i<= number_of_terms; i++)
+        while (i < (number_of_terms - 2))
         {
             next_term = a + b;
             a = b;
