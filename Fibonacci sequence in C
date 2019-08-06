@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a = 0;
+    int b = 1;
+    int i;
+    int number_of_terms;
+    int next_term;
+
+    puts("Enter the number of terms: ");
+    scanf("%d", &number_of_terms);
+
+    if (number_of_terms == 1)
+    {
+        printf("%d", a);
+    }
+
+    if (number_of_terms > 1)
+    {
+
+        for (i=0; i<= number_of_terms; i++)
+        {
+            next_term = a + b;
+            a = b;
+            b = next_term;
+            i += 1;
+            printf("%d \n", next_term);
+    }   }
+
+
+return 0;
+}
